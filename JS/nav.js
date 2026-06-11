@@ -1,4 +1,4 @@
-class NavController {
+class NavController{
   /**
    * @param {Object} config
    * @param {string} config.hamburgerSelector  - Button that opens mobile nav
@@ -102,7 +102,7 @@ class NavController {
 
 /* Init */
 document.addEventListener('DOMContentLoaded', () => {
-  new NavController1({
+  new NavController({
     hamburgerSelector:  '.header__hamburger',
     mobileNavSelector:  '.mobile-nav',
     navLinkSelector:    '.header__nav .nav__link',
