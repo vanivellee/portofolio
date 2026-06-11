@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio Vanini Aulia Ramadanty — UI/UX Designer & IT Student at Brawijaya University." />
+  <meta name="author" content="Vanini Aulia Ramadanty" />
+  <title>Vanini Aulia Ramadanty — Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Modular CSS (load order matters) -->
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/sections.css" />
+</head>
+
+<body>
+
+  <!--  HEADER -->
+  <header class="header" role="banner">
+
+    <!-- Logo / Name -->
+    <a href="#home" class="header__logo" aria-label="Kembali ke beranda">
+      Vanini Aulia Ramadanty
+    </a>
+
+    <!-- Desktop Navigation -->
+    <nav class="header__nav" aria-label="Navigasi utama">
+      <a href="#about"   class="nav__link">About Me</a>
+      <a href="#project" class="nav__link">Project</a>
+      <a href="#contact" class="nav__link">Contact</a>
+    </nav>
+
+    <!-- Mobile Hamburger Button -->
+    <button
+      class="header__hamburger"
+      id="hamburger"
+      aria-label="Buka menu navigasi"
+      aria-expanded="false"
+      aria-controls="mobile-nav"
+    >
+      <span class="header__hamburger-bar"></span>
+      <span class="header__hamburger-bar"></span>
+      <span class="header__hamburger-bar"></span>
+    </button>
+
+  </header><!-- /header -->
+
+
+  <!-- MOBILE NAV DRAWER -->
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Navigasi mobile">
+    <ul class="mobile-nav__list" role="list">
+      <li><a href="#about"   class="mobile-nav__link">About Me</a></li>
+      <li><a href="#project" class="mobile-nav__link">Project</a></li>
+      <li><a href="#contact" class="mobile-nav__link">Contact</a></li>
+    </ul>
+  </nav><!-- /mobile-nav -->
+
+
+  <!-- MAIN CONTENT -->
+  <main class="main" id="main-content">
+
+
+    <!-- HERO SECTION -->
+    <section class="section hero" id="home" aria-label="Beranda">
+      <div class="container">
+        <div class="hero__inner">
+
+          <!-- Text content -->
+          <div class="hero__text">
+            <p class="hero__greeting reveal">Hi,</p>
+            <h1 class="hero__name reveal reveal--delay-1">
+              I'm Vanini Aulia Ramadanty
+            </h1>
+            <p class="hero__tagline reveal reveal--delay-2">
+              "Designing Experiences That Matter"
+            </p>
+            <p class="hero__bio reveal reveal--delay-3">
+              Students at Brawijaya University specialising in technology-related
+              fields such as UI/UX design and others.
+            </p>
+
+            <!-- CTA Buttons -->
+            <div class="hero__actions reveal reveal--delay-4">
+              <button
+                class="btn btn--primary"
+                id="cv-btn"
+                aria-haspopup="dialog"
+                aria-controls="cv-modal"
+              >
+                CV
+              </button>
+              <a href="#contact" class="btn">Hubungi</a>
+            </div>
+          </div><!-- /hero__text -->
+
+          <!-- Photo -->
+          <div class="hero__photo-wrap reveal reveal--delay-2">
+            <img src="image\SLPT67605.jpg"
+                alt = "Foto Vanini Aulia Ramadanty"
+                class = "hero__photo"
+            
+
+        </div><!-- /hero__inner -->
+      </div><!-- /container -->
+    </section><!-- /hero -->
+
+
+    <!-- ABOUT ME SECTION -->
+    <section class="section" id="about" aria-labelledby="about-heading">
+      <div class="container">
+
+        <!-- Section heading with divider + magnifier icon -->
+        <div class="section-heading reveal">
+          <h2 class="section-heading__label" id="about-heading">About Me</h2>
+          <div class="section-heading__line" aria-hidden="true"></div>
+          <span class="section-heading__icon" aria-hidden="true">
+            <!-- Magnifying glass SVG -->
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+              <circle cx="7.5" cy="7.5" r="5.5"
+                stroke="#9C7B6A" stroke-width="1.4"/>
+              <line x1="11.9" y1="11.9" x2="16.5" y2="16.5"
+                stroke="#9C7B6A" stroke-width="1.4" stroke-linecap="round"/>
+            </svg>
+          </span>
+        </div>
+
+        <!-- 2-column grid: About + Education | Skills + Organisation -->
+        <div class="about__grid">
+
+          <!-- Card: About -->
+          <div class="card reveal">
+            <span class="card__label">About</span>
+            <p class="card__body">
+              I am an undergraduate student studying Information Technology
+              at the Faculty of Computer Science, Brawijaya University.
+              I have an interest in UI/UX design and website development,
+              and I am actively involved in faculty organisations while honing
+              my skills through real-world projects.
+            </p>
+          </div>
+
+          <!-- Card: Education -->
+          <div class="card reveal reveal--delay-1">
+            <span class="card__label">Education</span>
+            <div class="timeline">
+              <div class="timeline__item">
+                <span class="timeline__year">2022 — 2025</span>
+                <span class="timeline__desc">
+                  SMAN 10 Mataram <br>
+                         Science and Technology
+                          Class
+                </span>
+              </div>
+              <div class="timeline__item">
+                <span class="timeline__year">2025 — Present</span>
+                <span class="timeline__desc">
+                  Brawijaya University<br>
+                  Bachelor of Science in Information Technology
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card: Skills -->
+          <div class="card reveal reveal--delay-2">
+            <span class="card__label">Skills</span>
+            <div class="badge-group" role="list" aria-label="Daftar skill">
+              <span class="badge" role="listitem">Figma</span>
+              <span class="badge" role="listitem">Java</span>
+              <span class="badge" role="listitem">Canva</span>
+              <span class="badge" role="listitem">C++</span>
+              <span class="badge" role="listitem">CapCut</span>
+              <span class="badge" role="listitem">Microsoft Office</span>
+            </div>
+          </div>
+
+          <!-- Card: Organisation -->
+          <div class="card reveal reveal--delay-3">
+            <span class="card__label">Organisation</span>
+            <div class="timeline">
+              <div class="timeline__item">
+                <span class="timeline__year">2023 — 2024</span>
+                <span class="timeline__desc">
+                  Class Organization <br>
+                  Treasurer
+                </span>
+              </div>
+              <div class="timeline__item">
+                <span class="timeline__year">2025 — 2025</span>
+                <span class="timeline__desc">
+                  DPM FILKOM UB <br>
+                  Staff Muda Badan Legislasi
+                </span>
+              </div>
+              <div class="timeline__item">
+                <span class="timeline__year">2025 — 2025</span>
+                <span class="timeline__desc">
+                  Demisioner DPM FILKOM UB <br>
+                  Consumption Committee
+                </span>
+              </div>
+              <div class="timeline__item">
+                <span class="timeline__year">2026 — Present</span>
+                <span class="timeline__desc">
+                  DPM FILKOM UB <br> 
+                  Staff Ahli Badan Legislasi
+                </span>
+              </div>
+              <div class="timeline__item">
+                <span class="timeline__year">2026 — Present</span>
+                <span class="timeline__desc">
+                  Legislative Academy Committee <br>
+                  Public Relations Committee
+                </span>
+              </div>
+              <div class="timeline__item">
+                <span class="timeline__year">2026 — Present</span>
+                <span class="timeline__desc">
+                  Blood Donation Committee <br>
+                  Public Relations Committee
+                </span>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /about__grid -->
+      </div><!-- /container -->
+    </section><!-- /about -->
+
+
+    <!-- PROJECT SECTION -->
+    <section class="section" id="project" aria-labelledby="project-heading">
+      <div class="container">
+
+        <!-- Section heading with divider + sparkle icon -->
+        <div class="section-heading reveal">
+          <h2 class="section-heading__label" id="project-heading">Project</h2>
+          <div class="section-heading__line" aria-hidden="true"></div>
+          <span class="section-heading__icon" aria-hidden="true">
+            <!-- Sparkle / plus ornament SVG -->
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+              <line x1="9" y1="1"  x2="9"  y2="17"
+                stroke="#9C7B6A" stroke-width="1.4" stroke-linecap="round"/>
+              <line x1="1" y1="9"  x2="17" y2="9"
+                stroke="#9C7B6A" stroke-width="1.4" stroke-linecap="round"/>
+              <line x1="3.3" y1="3.3" x2="14.7" y2="14.7"
+                stroke="#9C7B6A" stroke-width="1" stroke-linecap="round"/>
+              <line x1="14.7" y1="3.3" x2="3.3" y2="14.7"
+                stroke="#9C7B6A" stroke-width="1" stroke-linecap="round"/>
+            </svg>
+          </span>
+        </div>
+
+        <!-- 2-column grid: Poster | Koran -->
+        <div class="project__grid">
+
+          <!-- Project Card: Desain Poster -->
+          <article class="project-card reveal" aria-label="Proyek Desain Poster">
+            <div class="project-card__header">Desain Poster</div>
+            <div class="project-card__img-slot">
+              <img 
+                src="image\POSTER.png" 
+                alt="Desain Poster Travel The World From Your Seat About Reading Books"
+              />
+            </div>
+          </article>
+
+          <!-- Project Card: Desain Koran -->
+          <article class="project-card reveal reveal--delay-1" aria-label="Proyek Desain Koran">
+            <div class="project-card__header">Desain Koran</div>
+            <div class="project-card__img-duo">
+              <img
+                src="image\Koran.png"
+                alt="Desain Koran 1"
+              />
+              <img
+                src="image\Koran versi lain.png"
+                alt="Desain koran 2"
+            </div>
+          </article>
+
+        </div><!-- /project__grid -->
+
+        <!-- Certificate Card -->
+        <div class="cert-card reveal reveal--delay-2" aria-label="Sertifikat">
+          <div class="cert-card__header">Certificate</div>
+          <ul class="cert-card__list" role="list">
+            <!-- Ganti teks di bawah dengan nama sertifikat asli -->
+            <li class="cert-card__item">Nama Sertifikat 1 — Lembaga / Tahun</li>
+            <li class="cert-card__item">Nama Sertifikat 2 — Lembaga / Tahun</li>
+            <li class="cert-card__item">Nama Sertifikat 3 — Lembaga / Tahun</li>
+          </ul>
+        </div>
+
+      </div><!-- /container -->
+    </section><!-- /project -->
+
+
+    <!-- CONTACT SECTION -->
+    <section class="section" id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+
+        <!-- Section heading with divider + hourglass icon -->
+        <div class="section-heading reveal">
+          <h2 class="section-heading__label" id="contact-heading">Contact</h2>
+          <div class="section-heading__line" aria-hidden="true"></div>
+          <span class="section-heading__icon" aria-hidden="true">
+            <!-- Hourglass SVG -->
+            <svg width="14" height="20" viewBox="0 0 14 20" fill="none">
+              <line x1="1" y1="1" x2="13" y2="1"
+                stroke="#9C7B6A" stroke-width="1.4" stroke-linecap="round"/>
+              <line x1="1" y1="19" x2="13" y2="19"
+                stroke="#9C7B6A" stroke-width="1.4" stroke-linecap="round"/>
+              <path d="M2 1c0 5.5 5 7.5 5 9s-5 3.5-5 9"
+                stroke="#9C7B6A" stroke-width="1.4" stroke-linecap="round"/>
+              <path d="M12 1c0 5.5-5 7.5-5 9s5 3.5 5 9"
+                stroke="#9C7B6A" stroke-width="1.4" stroke-linecap="round"/>
+            </svg>
+          </span>
+        </div>
+
+        <!-- Contact links -->
+        <nav class="contact__links reveal" aria-label="Tautan kontak">
+
+          <!--
+            INSTRUKSI: Ganti setiap href dengan link aslimu.
+          -->
+
+          <!-- Email -->
+          <a href="mailto:vauliaramadanty@gmail.com" class="contact-link" aria-label="Kirim email">
+            <span class="contact-link__icon" aria-hidden="true">
+              <svg width="16" height="12" viewBox="0 0 16 12" fill="none">
+                <rect x="0.5" y="0.5" width="15" height="11" rx="1.5"
+                  stroke="#9C7B6A" stroke-width="1.2"/>
+                <path d="M0.5 2L8 7.5L15.5 2"
+                  stroke="#9C7B6A" stroke-width="1.2"/>
+              </svg>
+            </span>
+            Email
+          </a>
+
+          <!-- LinkedIn -->
+          <a
+            href="https://www.linkedin.com/in/vanini-aulia-ramadanty-686377370?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            class="contact-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn (buka di tab baru)"
+          >
+            <span class="contact-link__icon" aria-hidden="true">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                <rect x="0.5" y="0.5" width="13" height="13" rx="2"
+                  stroke="#9C7B6A" stroke-width="1.2"/>
+                <line x1="3" y1="5.5" x2="3" y2="11"
+                  stroke="#9C7B6A" stroke-width="1.2"/>
+                <circle cx="3" cy="3.2" r="0.7" fill="#9C7B6A"/>
+                <path d="M5.5 5.5v5.5M5.5 7.5c0-1.1.9-2 2-2s2 .9 2 2v3.5"
+                  stroke="#9C7B6A" stroke-width="1.2" stroke-linecap="round"/>
+              </svg>
+            </span>
+            LinkedIn
+          </a>
+
+          <!-- GitHub -->
+          <a
+            href="https://github.com/vanini"
+            class="contact-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub (buka di tab baru)"
+          >
+            <span class="contact-link__icon" aria-hidden="true">
+              <svg width="16" height="15" viewBox="0 0 16 15" fill="none">
+                <path d="M8 0.5C3.858 0.5 0.5 3.858 0.5 8c0 3.314 2.148
+                  6.126 5.127 7.12.375.07.512-.163.512-.362v-1.27c-2.087.454
+                  -2.526-.998-2.526-.998-.34-.867-.83-1.098-.83-1.098-.679-.464
+                  .051-.455.051-.455.75.053 1.145.77 1.145.77.667 1.143 1.75.812
+                  2.178.621.067-.483.261-.812.474-.998-1.663-.19-3.41-.832-3.41
+                  -3.703 0-.818.292-1.487.77-2.011-.077-.19-.334-.952.073-1.984
+                  0 0 .628-.2 2.056.766A7.166 7.166 0 0 1 8 4.57c.636.003
+                  1.276.086 1.875.252 1.427-.966 2.054-.766 2.054-.766.408
+                  1.032.151 1.794.074 1.984.48.524.77 1.193.77 2.011 0 2.879
+                  -1.75 3.511-3.417 3.697.269.231.508.687.508 1.385v2.053c0
+                  .2.136.435.516.361C13.354 14.123 15.5 11.313 15.5 8
+                  15.5 3.858 12.142.5 8 .5Z"
+                  stroke="#9C7B6A" stroke-width="0.8" fill="none"/>
+              </svg>
+            </span>
+            GitHub
+          </a>
+
+          <!-- Instagram -->
+          <a
+            href="https://www.instagram.com/vaa.rty?igsh=OWp3dXpxNWM1b2gw"
+            class="contact-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram (buka di tab baru)"
+          >
+            <span class="contact-link__icon" aria-hidden="true">
+              <svg width="15" height="15" viewBox="0 0 15 15" fill="none">
+                <rect x="0.5" y="0.5" width="14" height="14" rx="4"
+                  stroke="#9C7B6A" stroke-width="1.2"/>
+                <circle cx="7.5" cy="7.5" r="2.8"
+                  stroke="#9C7B6A" stroke-width="1.2"/>
+                <circle cx="11.2" cy="3.8" r="0.7" fill="#9C7B6A"/>
+              </svg>
+            </span>
+            Instagram
+          </a>
+
+        </nav><!-- /contact__links -->
+      </div><!-- /container -->
+    </section><!-- /contact -->
+
+
+  </main><!-- /main -->
+
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer__stars" aria-hidden="true">
+      <span class="footer__star">★</span>
+      <span class="footer__star">★</span>
+      <span class="footer__star">★</span>
+    </div>
+    <p class="footer__name">Vanini Aulia Ramadanty</p>
+    <p class="footer__copy">© 2026 · Malang, Indonesia</p> 
+  </footer>
+
+
+  <!-- CV MODAL DIALOG -->
+  <div
+    class="modal-overlay"
+    id="cv-modal"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="cv-modal-title"
+  >
+    <div class="modal">
+
+      <!-- Close button -->
+      <button
+        class="modal__close"
+        id="cv-modal-close"
+        aria-label="Tutup modal CV"
+      >✕</button>
+
+      <!-- Modal content -->
+      <h2 class="modal__title" id="cv-modal-title">Curriculum Vitae</h2>
+
+      <p class="modal__subtitle">
+        <strong>Vanini Aulia Ramadanty</strong><br>
+        Brawijaya University · Information Technology
+      </p>
+
+      <p class="modal__body">
+        Undergraduate student specialising in UI/UX design and website
+        development. Actively involved in faculty organisations and
+        real-world projects to develop technical and creative skills.
+      </p>
+
+      <a
+        href="https://drive.google.com/file/d/1vgJJ48MVmr1ybaQ8cm-PeVyLe4UsM_Ir/view?usp=sharing"
+        class="btn btn--primary"
+        target="_blank"
+        rel="noopener noreferrer"
+        style="margin-top: 8px; display: inline-block;"
+      >
+        Download CV (PDF)
+      </a>
+
+      <p class="modal__note">
+        Ganti link di atas dengan URL Google Drive atau path file CV aslimu.
+      </p>
+
+    </div><!-- /modal -->
+  </div><!-- /modal-overlay -->
+
+
+  <!-- JAVASCRIPT MODULES (load last for performance)  -->
+  <script src="js/scroll.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/modal.js"></script>
+
+</body>
+</html>
