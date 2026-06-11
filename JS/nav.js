@@ -102,7 +102,7 @@ class NavController {
 
 /* Init */
 document.addEventListener('DOMContentLoaded', () => {
-  new NavController({
+  new NavController1({
     hamburgerSelector:  '.header__hamburger',
     mobileNavSelector:  '.mobile-nav',
     navLinkSelector:    '.header__nav .nav__link',
