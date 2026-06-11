@@ -1,9 +1,8 @@
-/* Mobile Navigation & Active Link Highlighting */
-
 /**
  * NavController
  * Manages hamburger menu toggle and active nav link state
  * based on the current scroll position.
+ * Mobile Navigation & Active Link Highlighting
  */
 class NavController {
   /**
