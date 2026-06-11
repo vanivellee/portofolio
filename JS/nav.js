@@ -1,4 +1,4 @@
-/* nav.js — Mobile Navigation & Active Link Highlighting */
+/* Mobile Navigation & Active Link Highlighting */
 
 /**
  * NavController
