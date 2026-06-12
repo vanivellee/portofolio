@@ -176,7 +176,7 @@
 
 .project-card__img-duo-item {
   background:  var(--color-linen);
-  aspect-ratio: 3 / 4;
+  aspect-ratio: 1 / 1;
   overflow:    hidden;
   display:     flex;
   align-items:     center;
