@@ -160,7 +160,7 @@
 
 .project-card__img-slot img {
   width:      50%;
-  height:     25%;
+  height:     50%;
   object-fit: cover;
   display:    block;
 }
