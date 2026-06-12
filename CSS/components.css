@@ -151,7 +151,7 @@
 /* Single image slot */
 .project-card__img-slot {
   background: var(--color-linen);
-  aspect-ratio: 3 / 4;
+  aspect-ratio: 1 / 1;
   overflow: hidden;
   display:  flex;
   align-items:     center;
